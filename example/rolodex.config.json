@@ -1,0 +1,33 @@
+{
+	"allow": {
+        "hosts": [
+            "localhost"
+        ]
+    },
+    "db": {
+        "redis": {
+            "host": "127.0.0.1",
+            "port": 6379,
+            "password": "",
+            "prefix": "rolodex:"
+        }
+    },
+    "routes": {
+        "client": "/.openpeer-rolodex/client",
+        "auth": "/.openpeer-rolodex/auth",
+        "authCallback": "/.openpeer-rolodex/callback",
+        "logout": "/.openpeer-rolodex/logout",
+        "refetch": "/.openpeer-rolodex/refetch",
+        "services": "/.openpeer-rolodex/services",
+        "contacts": "/.openpeer-rolodex/contacts"
+    },
+    "services": [
+    	{
+			"name": "github",
+			"passport": {
+			"clientID":"3003cadc2ec2a3344551",
+			"clientSecret": "193a9e6006ef4a045f85631b9d231125dcf5fb70"
+			}
+		}
+    ]
+}
